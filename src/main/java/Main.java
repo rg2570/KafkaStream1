@@ -16,7 +16,7 @@ public class Main
     public static void main(String[] args) throws  Exception
     {
         final  String TOPIC = "k1-topic";
-        final  String BOOTSTRAP_SERVERS = "172.30.5.235:9092,172.30.5.236:9092,172.30.5.237:9092";
+        final  String BOOTSTRAP_SERVERS = "server1:9092,server2:9092,server3:9092";
             Properties props = new Properties();
             props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
             props.put(StreamsConfig.APPLICATION_ID_CONFIG, "bigd");
